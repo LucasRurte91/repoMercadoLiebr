@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link
+    href="https://cdnjs.cloudflare.com/ajax/líbs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-mercado-liebre.svg" width="360" alt="Logo de MercadoLiebre">
+        <div class="buscador">
+        <input type="text" name="buscar" placeholder="Buscar productos,marcas y mas"> 
+        <i class="fas fa-search"></i>
+        </div>
+        <div>
+        <p class="alinear"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de credito</p>
+        </div>
+<nav>
+     <ul>
+        <li><a href="#"style="color: black"class="sub">Ofertas</a></li>
+        <li><a href="#"style="color: black"class="sub">Tiendas Oficiales</a></li>
+        <li><a href="#"style="color: black"class="sub">Vender</a></li>
+        <li><a href="#"style="color: black"class="sub">Ayuda</a></li>
+     </ul>
+     <ul>
+        <li>
+        <a href="#"style="color: black"class="sub">Crea tu cuenta</a><i class="fas fa-address-card"></i>
+        </li>
+        <li><a href="#"style="color: black"class="sub">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+        <li>
+        <a href="#"style="color: black"class="sub">Mis Compras</a><i class="fas fa-shopping-basket"></i>
+        </li>
+     </ul>
+</nav>
+        <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <form method="GET" action="/" class="register-form">
+    <div class="registros">
+        <div><label for="nombre_apellido">Nombre y Apellido</div> 
+        <input type="text" name="nombre_apellido" placeholder="nombre-apellido" required>
+    </label>
+    </div>
+    <div class="registros">
+        <div><label for="usuario">Nombre De Usuario</div> 
+        <input type="text" name="usuario" placeholder="Usuari@" required>
+    </label>
+    </div>
+    <div class="registros">
+        <div><label for="Fecha de nacimiento">Fecha de Nacimiento</div> 
+        <input type="date" placeholder="Fecha de nacimiento" name="nacimiento">
+    </label>
+    </div>
+    <div class="registros">
+       <div><label for="Domicilio">Domicilio</div>
+        <input type="text" placeholder="Domicilio" name="domicilio">
+    </label>
+    </div>
+    <div class="registros">
+        <div><label for="perfil">Perfil De Usuario </div>
+       <div><input type="radio" name="perfil" value="Comprador">Comprador</input></div>
+        <div><input type="radio" name="perfil" value="Vendedor">Vendedor</input></div>
+    </div>
+    </label>
+           <div class="registros"><label name="interes">Categoria De interes
+           <div><input type="checkbox" name="interes" value="Electro">Electro</input></div>
+           <div><input type="checkbox" name="interes" value="Moda">Moda</input></div>
+           <div><input type="checkbox" name="interes" value="Hogar">Hogar</input></div>
+           <div><input type="checkbox" name="interes" value="Jugueteria">Jugueteria</input></div>
+           <div><input type="checkbox" name="interes" value="Vida sana">Vida sana</input></div></div>  
+       </label>
+       <div class="registros">
+           <label for="foto-usuario">Foto Del Usuario
+           <input type="file" name="foto-usuario" accept=".jpg">
+       </label>
+    </div>
+    <div class="registros">
+       <div><label for="password">Contraseña</div>
+       <div><input type="password" name="password" id="password" placeholder="Contraseña" required></div>
+        </label>
+    </div>
+    <div class="registros">
+        <div><label for="password">Confirmar Contraseña</div>
+        <div><input type="password" name="password" id="password" placeholder="Confirmar contraseña" required></div>
+        </label>
+    </div>
+        <div class="enviar"><button type="submit">Enviar</button></div>
+        <div class="cancelar"><button type="reset">Cancelar</button></div>
+    </form>
+</body>
+</html>
